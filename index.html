@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="robots" content="index,follow">
+  <title>《字里行间》隐私政策</title>
+  <meta name="description" content="《字里行间》iOS 应用隐私政策。说明本机保存、权限申请，以及使用 AI 时向第三方传输的数据。">
+  <style>
+    :root {
+      --paper-top: #faf6ee;
+      --paper-bottom: #f0e6d4;
+      --ink: #2a241c;
+      --ink-soft: #5c5348;
+      --rule: rgba(82, 66, 45, 0.18);
+      --accent: #855c38;
+      --seal: #7d2f28;
+      --card: rgba(255, 252, 246, 0.72);
+    }
+
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      min-height: 100vh;
+      color: var(--ink);
+      background:
+        radial-gradient(1200px 500px at 10% -10%, rgba(158, 71, 61, 0.05), transparent 50%),
+        linear-gradient(180deg, var(--paper-top), var(--paper-bottom));
+      font-family: "Songti SC", "STSongti-SC-Regular", "Source Han Serif SC", "Noto Serif CJK SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", serif;
+      line-height: 1.75;
+    }
+
+    .wrap {
+      width: min(44rem, calc(100% - 2rem));
+      margin: 0 auto;
+      padding: 2.4rem 0 4rem;
+    }
+
+    header {
+      padding-bottom: 1.4rem;
+      border-bottom: 1px solid var(--rule);
+      margin-bottom: 1.6rem;
+    }
+
+    .brand {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 0.85rem;
+    }
+
+    .brand-name {
+      font-size: 0.92rem;
+      letter-spacing: 0.38em;
+      color: var(--accent);
+    }
+
+    .seal {
+      flex: none;
+      border: 1px solid var(--seal);
+      color: var(--seal);
+      font-size: 0.72rem;
+      letter-spacing: 0.18em;
+      padding: 0.18rem 0.42rem;
+    }
+
+    h1 {
+      font-size: clamp(1.7rem, 4vw, 2.15rem);
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      margin: 0 0 0.55rem;
+    }
+
+    .meta {
+      color: var(--ink-soft);
+      font-size: 0.92rem;
+      margin: 0;
+    }
+
+    .lede {
+      margin: 1.1rem 0 0;
+      font-size: 1.02rem;
+    }
+
+    main section {
+      margin-top: 1.9rem;
+      padding: 0.15rem 0 0.1rem;
+    }
+
+    h2 {
+      font-size: 1.12rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      margin: 0 0 0.7rem;
+      padding-bottom: 0.35rem;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    p, li { font-size: 1rem; }
+    p { margin: 0.7rem 0; }
+    ul, ol { margin: 0.45rem 0 0.7rem; padding-left: 1.25rem; }
+    li { margin: 0.28rem 0; }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--rule);
+      padding: 0.85rem 1rem;
+    }
+
+    footer {
+      margin-top: 2.4rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--rule);
+      color: var(--ink-soft);
+      font-size: 0.88rem;
+    }
+
+    footer p { margin: 0.35rem 0; }
+
+    a {
+      color: var(--accent);
+      text-underline-offset: 0.18em;
+    }
+
+    @media (max-width: 640px) {
+      .wrap { width: calc(100% - 1.4rem); padding-top: 1.4rem; }
+      .brand { align-items: flex-start; flex-direction: column; gap: 0.45rem; }
+      body { line-height: 1.7; }
+    }
+
+    @media print {
+      body { background: #fff; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="brand-name">字里行间</div>
+        <div class="seal">隐私政策</div>
+      </div>
+      <h1>《字里行间》隐私政策</h1>
+      <p class="meta">最后更新日期：2026-10-30</p>
+      <p class="lede">《字里行间》是一款在本机使用的文化创作应用。本说明只描述当前 iOS 版本的真实行为，供 TestFlight 测试与后续上架使用。</p>
+    </header>
+
+    <main>
+      <section>
+        <h2>一、我们是谁</h2>
+        <p>本应用由字里行间开发者提供。测试阶段没有独立用户账号，也没有把你的作品自动同步到开发者服务器。</p>
+      </section>
+
+      <section>
+        <h2>二、哪些数据只留在你的设备</h2>
+        <p>以下内容默认写在本机沙盒、系统钥匙串或你自己导出的文件里：</p>
+        <ul>
+          <li>文化种子库的安装副本，以及你之后新增的故事、档案、计划、作品</li>
+          <li>字帖、切字、集字、实体图片、配音与导出成片</li>
+          <li>通讯录及其中的照片（仅你主动使用通讯录时）</li>
+          <li>大模型与 AI 生图的 API Key（系统钥匙串；极少数情况下才落到本机加密文件）</li>
+          <li>外观、语言、罗盘背景等偏好</li>
+        </ul>
+        <p>完整备份由你在「媒体中心」手动导出。备份默认不包含 API Key、通讯录照片和调试状态。Key 如需换机，只能由你设密码后单独导出加密设置包。</p>
+      </section>
+
+      <section>
+        <h2>三、哪些数据会离开本机</h2>
+        <p>应用没有内置统计分析、广告或崩溃上报 SDK。但只要你使用下列功能，相关内容就会发往第三方或你自己填写的地址：</p>
+        <ol>
+          <li>
+            <strong>大模型对话、故事生成、绘境提示词</strong><br>
+            发往你在设置里选择的 DeepSeek 或阿里云百炼。内容包括提示词、故事设定和模型返回的文本。
+          </li>
+          <li>
+            <strong>AI 生图</strong><br>
+            发往火山方舟（Seedream）。内容包括生图提示词及服务商返回的图片。
+          </li>
+          <li>
+            <strong>配音</strong><br>
+            使用阿里云百炼 CosyVoice。内容包括待朗读的文本。
+          </li>
+          <li>
+            <strong>「感兴趣」网络热搜</strong><br>
+            会向公开热榜来源（如微博、百度等）请求话题列表；若你同时启用了大模型，应用可能再用这些话题去匹配文化实体。
+          </li>
+          <li>
+            <strong>切图服务 / 云端主站</strong><br>
+            仅当你自己填写了服务地址时才会访问。切图会上传你选择的页面图片。正式版本不会把 API Key 同步到云端主站。
+          </li>
+          <li>
+            <strong>你主动分享或保存到系统相册、文件的内容</strong><br>
+            按 iOS 系统机制处理。
+          </li>
+        </ol>
+        <p>没有配置 API Key 时，查字、字帖阅读、典藏浏览和本地切字等功能仍可使用，不会因此去调用上述 AI 接口。</p>
+      </section>
+
+      <section>
+        <h2>四、第三方如何处理数据</h2>
+        <p>下列服务仅在你主动使用对应功能、并（如需）自行填写 API Key 时才会接到数据。字里行间不能控制这些服务如何存储或训练模型。请只使用你自己的 API Key，并在对方控制台自行设置额度。</p>
+        <div class="card">
+          <ul>
+            <li>DeepSeek：对话 / 故事 / 绘境</li>
+            <li>阿里云百炼（DashScope / CosyVoice）：对话与配音</li>
+            <li>火山方舟（Seedream）：AI 生图</li>
+            <li>公开热榜来源（如微博、百度等）：仅请求公开话题列表</li>
+          </ul>
+        </div>
+        <p>请以各服务商官网现行隐私政策与计费规则为准。本页不代替对方的政策文本。</p>
+      </section>
+
+      <section>
+        <h2>五、权限</h2>
+        <p>仅在对应功能需要时向系统申请：</p>
+        <ul>
+          <li>相机：拍摄字帖图片并上传切图</li>
+          <li>相册读取：选择图片或影片，收入字帖、分镜参考等</li>
+          <li>相册写入：将探索成片保存到相册</li>
+          <li>麦克风：在字帖再现过程中录制讲解或诵读</li>
+          <li>面容 / 本机解锁：打开通讯录收藏的人，或填写、重设设置迁移密码</li>
+          <li>本地网络：连接你本机或局域网内的字里行间服务（可选）</li>
+        </ul>
+        <p>拒绝某项权限只会关闭对应功能，不影响其他本地功能。</p>
+      </section>
+
+      <section>
+        <h2>六、如何处理或删除数据</h2>
+        <p>本应用没有开发者侧用户账号，因此也没有「向我们申请删除云端作品」的流程。</p>
+        <ul>
+          <li>可在应用内删除故事、计划、字帖等条目，或在「媒体中心」管理本机文件。</li>
+          <li>可在设置中清除自行填写的 API Key。</li>
+          <li>卸载应用会删除本机沙盒中的作品与设置副本。若卸载前未先在设置中清除 Key，系统钥匙串里可能仍留有密钥，可在重装后进入设置再清除。</li>
+          <li>已经发往 DeepSeek、阿里云百炼、火山方舟等第三方的内容，无法由本应用代为删除，需按对方政策处理。</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>七、我们不做什么</h2>
+        <ul>
+          <li>不建立测试者账号，也不查看你设备里的作品</li>
+          <li>不把开发者个人 API Key 打包进应用</li>
+          <li>不在正式版本提供开发模式、局域网调试或数据资产管理后台</li>
+          <li>不声称「所有数据永远只在本地」——一旦使用 AI 或你填写的外部地址，数据就会离开本机</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>八、儿童</h2>
+        <p>本应用面向成人文化创作，不面向 13 岁以下儿童收集个人信息。</p>
+      </section>
+
+      <section>
+        <h2>九、联系与更新</h2>
+        <p>测试阶段如有隐私问题，请直接联系邀请你加入 TestFlight 的开发者。本页不公布个人邮箱。</p>
+        <p>政策更新后，会同步修改应用内「设置 → 隐私政策」与本页。若将来绑定自有域名，本页内容保持同一份。</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>本页由 GitHub Pages 托管静态文件，不含广告、统计或追踪脚本。</p>
+    </footer>
+  </div>
+</body>
+</html>

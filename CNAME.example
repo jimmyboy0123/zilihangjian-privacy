@@ -1,0 +1,8 @@
+# 将来绑定自有域名时：
+# 1. 把本文件复制为 CNAME（不要扩展名）
+# 2. 只写一行域名，例如：
+# privacy.zilihangjian.com
+# 3. 在域名服务商添加 CNAME 记录，指向 <github-user>.github.io
+# 4. 在 GitHub 仓库 Settings → Pages 填入同一自定义域名并等待 HTTPS 证书签发
+#
+# 现在不要提交真实 CNAME，除非域名已经准备好。
